@@ -1,0 +1,87 @@
+
+
+body{
+	margin: 0;
+}
+
+textarea,#lol1{
+	position: absolute;
+	left:17.2px;
+	background: black;
+	font-family: monospace;
+	color: white;
+	width:500px;
+	height:400px;
+	resize: none;
+	border: none;
+	padding-right: 3px;
+	line-height: 27.6167px;
+	font-size: 17.2px;
+	margin:0;
+	margin-right: 3px;
+}
+
+#numbers{
+	height: 383px;
+	max-height: 383px;
+	display: inline-block;
+	background-color: rgba(100,120,130,0.5);
+	overflow: hidden;
+}
+
+textarea{
+	/*visibility: hidden;*/
+/*	opacity: 0;*/
+	color: black;
+	caret-color:white;
+	background-color: rgba(0,0,0,0);
+	mix-blend-mode: lighten;
+	overflow: scroll;
+	overflow-x: scroll;
+	white-space: pre;
+	width:505px;
+	padding-right: 2px;
+}
+
+span{
+	display: flex;
+    flex-direction: row;
+	height: 27.6167px;
+	width:17.2px;
+	align-content: center;
+
+}
+
+.num{
+	color: white;
+}
+
+.active{
+	background-color: rgb(68,60,51);
+}
+
+#lol1{
+	position: absolute;
+	max-width: 490px;
+	max-height: 383px;
+	overflow: hidden;
+	width:487px;
+	z-index: -1;
+}
+
+#lol1::-moz-selection{
+	background-color: unset;
+	color: unset;
+}
+
+textarea::-moz-selection{
+	background-color: rgba(200,200,200,0.3);
+	color: rgba(0,0,0,0);
+}
+
+
+
+
+.tag{
+	color: green;
+}
