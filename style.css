@@ -5,8 +5,9 @@ body{
 }
 
 textarea,#lol1{
+  outline: none;
 	position: absolute;
-	left:17.2px;
+	left:17px;
 	background: black;
 	font-family: monospace;
 	color: white;
@@ -14,11 +15,9 @@ textarea,#lol1{
 	height:400px;
 	resize: none;
 	border: none;
-	padding-right: 3px;
-	line-height: 27.6167px;
-	font-size: 17.2px;
+	font-size: 17px;
+  font-weight:400;
 	margin:0;
-	margin-right: 3px;
 }
 
 #numbers{
@@ -32,6 +31,8 @@ textarea,#lol1{
 textarea{
 	/*visibility: hidden;*/
 /*	opacity: 0;*/
+line-height: 27px;
+padding: 0;
 	color: black;
 	caret-color:white;
 	background-color: rgba(0,0,0,0);
@@ -39,17 +40,14 @@ textarea{
 	overflow: scroll;
 	overflow-x: scroll;
 	white-space: pre;
-	width:505px;
-	padding-right: 2px;
 }
 
 span{
 	display: flex;
-    flex-direction: row;
-	height: 27.6167px;
-	width:17.2px;
-	align-content: center;
-
+  flex-direction: row;
+	height: 27px !important;
+	width:17px;
+  min-height: 27px;
 }
 
 .num{
@@ -62,10 +60,10 @@ span{
 
 #lol1{
 	position: absolute;
-	max-width: 490px;
+	max-width: 483px;
 	max-height: 383px;
 	overflow: hidden;
-	width:487px;
+	width:483px;
 	z-index: -1;
 }
 
@@ -75,6 +73,16 @@ span{
 }
 
 textarea::-moz-selection{
+	background-color: rgba(200,200,200,0.3);
+	color: rgba(0,0,0,0);
+}
+
+#lol1::selection{
+	background-color: unset;
+	color: unset;
+}
+
+textarea::selection{
 	background-color: rgba(200,200,200,0.3);
 	color: rgba(0,0,0,0);
 }
